@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header: #535971;
+    --body: #EFEFEF;
+    --form: #FFF;
+    --button: #FF5374;
+    --titles: 'Staatliches', 'sans-serif';
+    --texts: 'Poppins', 'sans-serif';
+}
+
+body{
+    background: var(--body);
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 436px;
+    left: 0;
+    top: 0;
+    background: var(--header);
+    position: absolute;
+    z-index: -1;
+}
+
+.page{
+    width: 750px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+header{
+    color: #FFF;
+    width: 417px;
+    margin-top: 140px;
+    margin-bottom: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+header h1{
+    font-family: var(--titles);
+    font-size: 48px;
+    font-weight: 400;
+}
+header P{
+    font-family: var(--texts);
+    font-size: 20px;
+}
+
+form{
+    background-color: var(--form);
+    width: 750px;
+    padding: 64px 64px 20px 64px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+form fieldset{
+    border: none;
+    margin-bottom: 30px;
+}
+
+fieldset h1{
+    font-family: var(--titles) ;
+    color: #535971;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;
+
+    margin-bottom: 36px;
+}
+
+.set{
+    display: flex;
+    gap: 22px;
+}
+
+.set input{
+    width: 300px ;
+}
+
+.input-wrapper{
+    font-family: var(--texts);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.input-wrapper input{
+    font-family: var(--texts);
+    color: #3f3f3f;
+    border-radius: 8px;
+    height: 56px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    padding: 10px;
+}
+
+.input-wrapper span{
+    color: #C1BCCC;
+    font-family: var(--texts);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 9px;
+}
+
+.input-wrapper span:hover{
+    color: #7b7a7e;
+}
+
+.gen{
+    display: block;
+}
+
+.gen h2{
+    font-family: var(--titles) ;
+    color: #535971;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 8px;
+}
+
+#date{
+    width: 300px;
+}
+
+.grouping{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.grouping input{
+    width: 140px;
+}
+
+.form-buttons{
+    background-color: var(--header);
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 52px 70px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.button{
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: none;
+
+    color: #FFF;
+    font-family: var(--titles);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+
+    background: var(--button);
+
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #e24867;
+}
+
